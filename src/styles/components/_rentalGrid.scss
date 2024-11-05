@@ -1,0 +1,36 @@
+@import "../variables";
+
+.rental-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(340px, 1fr));
+  gap: 40px;
+  padding: 50px;
+  margin: 50px auto;
+  background-color: $rental-bg-color;
+  border-radius: $rental-card-radius;
+
+  .rental-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: $rental-card-radius;
+    box-shadow: $rental-card-shadow;
+
+    .rental-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .rental-title {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: $wht-color;
+      background-color: $main-color;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 18px;
+      max-width: 330px;
+    }
+  }
+}

@@ -1,4 +1,7 @@
 @import "./variables.scss";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/rentalGrid";
 
 * {
     margin: 0;
@@ -7,5 +10,7 @@
 }
 
 body {
+    max-width: 1240px;
     font-family: $font-main;
+    margin: 0 auto;
 }
