@@ -1,4 +1,3 @@
-import '../styles/main.css';
 import img from '../assets/Img-home.jpg';
 
 const Banner = () => {

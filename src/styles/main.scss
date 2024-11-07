@@ -1,7 +1,7 @@
-@import "./variables.scss";
-@import "./components/navbar";
-@import "./components/banner";
-@import "./components/rentalGrid";
+@use "variables.scss" as *;
+@use "components/navbar";
+@use "components/banner";
+@use "components/rentalGrid";
 
 * {
     margin: 0;
