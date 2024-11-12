@@ -4,6 +4,7 @@
 @use "components/rentalGrid";
 @use "components/footer";
 @use "components/accordion";
+@use "components/page404";
 
 
 * {
@@ -20,5 +21,5 @@ body {
 .optimal-width {
     width: 100%;
     max-width: 1240px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }

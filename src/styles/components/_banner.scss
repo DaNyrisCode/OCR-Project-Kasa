@@ -18,10 +18,18 @@
   }
 
   &-text {
-    position: absolute; /* On garde position absolute pour le texte */
+    position: absolute;
     color: $wht-color;
     font-size: 48px;
     font-weight: bold;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    height: 111px;
+    justify-content: left;
+    &-text {
+      font-size: 24px;
+    }
   }
 }

@@ -1,0 +1,28 @@
+@use "../variables" as *;
+@import "../variables.scss";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: $main-color;
+    margin: 100px 0;
+
+    h1 {
+        font-size: 288px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .error-text {
+        font-size: 36px;
+        margin: 20px 0;
+    }
+
+    .error-link {
+        font-size: 18px;
+        color: $blck-color;
+    }
+}
