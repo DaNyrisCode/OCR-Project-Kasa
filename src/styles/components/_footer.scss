@@ -1,0 +1,17 @@
+@use "../variables" as *;
+@import "../variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 209px;
+    background-color: $blck-color;
+    color: $wht-color;
+    font-size: 24px;
+
+    &-text {
+        margin-top: 40px;
+    }
+}

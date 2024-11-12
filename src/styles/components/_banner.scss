@@ -1,23 +1,26 @@
 @use "../variables" as *;
+@import "../variables.scss";
 
 .banner {
   position: relative;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
 
   img {
     width: 100%;
-    height: 223px;
+    height: 100%;
     object-fit: cover;
     border-radius: $rental-card-radius;
     filter: brightness(50%);
   }
 
   &-text {
-    position: absolute;
-    bottom: 50%;
-    left: 35%;
+    position: absolute; /* On garde position absolute pour le texte */
     color: $wht-color;
-    font-size: 24px;
+    font-size: 48px;
     font-weight: bold;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   }

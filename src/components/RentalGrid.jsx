@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const RentalGrid = () => {
   return (
-    <div className="rental-grid">
+    <div className="rental-grid optimal-width">
       {data.map(rental => (
         <Link to={`/logement/${rental.id}`} key={rental.id} className="rental-card">
           <img src={rental.cover} alt={rental.title} className="rental-image" />

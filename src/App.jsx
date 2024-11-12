@@ -4,6 +4,7 @@ import About from './pages/About';
 import Logement from './pages/Logement';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './styles/main.scss';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

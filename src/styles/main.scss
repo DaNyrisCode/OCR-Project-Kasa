@@ -2,15 +2,23 @@
 @use "components/navbar";
 @use "components/banner";
 @use "components/rentalGrid";
+@use "components/footer";
+@use "components/accordion";
+
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    max-width: 1240px;
+    width: 100%;
     font-family: $font-main;
-    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.optimal-width {
+    width: 100%;
+    max-width: 1240px;
+    box-sizing: border-box;    
 }

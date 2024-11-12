@@ -1,8 +1,12 @@
+import Banner from '../components/Banner';
+import Valors from '../components/ValorsAccordion';
+
 const About = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <Banner />
+            <Valors />
+        </>
     );
 };
 
