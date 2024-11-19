@@ -1,28 +1,46 @@
 @use "../variables" as *;
-@import "../variables.scss";
+// @import "../variables.scss";
 
 .error {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    text-align: center;
+    gap: 140px;
     color: $main-color;
-    margin: 100px 0;
+    margin: 140px 0;
+
+    @media (max-width: 768px) {
+        gap: 113px;
+        margin: 113px 0;
+    }
 
     h1 {
         font-size: 288px;
         font-weight: bold;
         margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 96px;
+        }
     }
 
     .error-text {
         font-size: 36px;
         margin: 20px 0;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
     }
 
     .error-link {
         font-size: 18px;
         color: $blck-color;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }

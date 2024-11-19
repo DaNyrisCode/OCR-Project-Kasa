@@ -1,5 +1,5 @@
 @use "../variables" as *;
-@import "../variables.scss";
+// @import "../variables.scss";
 
 .navbar {
   display: flex;
@@ -10,20 +10,24 @@
 
   @media (max-width: 768px) {
     padding: 20px 0;
-    }
+  }
 
   .logo {
     font-size: 24px;
 
     @media (max-width: 768px) {
-			width: 100px;
-		  }
+      width: 145px;
+    }
   }
 
   .nav-links {
     list-style: none;
     display: flex;
     gap: 50px;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
 
     li {
       display: inline;
@@ -43,7 +47,8 @@
 
         @media (max-width: 768px) {
           font-size: 12px;
-          }
+          text-transform: uppercase;
+        }
       }
     }
   }

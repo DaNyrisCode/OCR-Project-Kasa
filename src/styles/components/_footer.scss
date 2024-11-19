@@ -1,5 +1,5 @@
 @use "../variables" as *;
-@import "../variables.scss";
+// @import "../variables.scss";
 
 .footer {
     display: flex;
@@ -11,7 +11,22 @@
     color: $wht-color;
     font-size: 24px;
 
+    @media (max-width: 768px) {
+        font-size: 12px;
+      }
+
     &-text {
         margin-top: 40px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
     }
+
+    .footer-line-break {
+        @media (max-width: 768px) {
+            display: block;       
+        }
+      }
 }

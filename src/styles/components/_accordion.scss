@@ -1,12 +1,18 @@
 @use "../variables" as *;
-@import "../variables.scss";
+// @import "../variables.scss";
 
 .accordion {
     margin: 40px auto;
-    width: 1023px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+    width: 80%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        gap: 20px;
+        margin: 20px auto;
+    }
 
     .accordion-item {
         margin-bottom: 10px;
@@ -21,18 +27,34 @@
             width: 100%;
             text-align: left;
             border: none;
-            font-size: 18px;
+            font-size: 24px;
+            font-weight: bold;
             cursor: pointer;
             outline: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
             transition: background-color 0.3s ease;
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+                padding: 10px;
+            }
+
+            .arrow {
+                @media (max-width: 768px) {
+                    width: 16px;
+                }
+            }
         }
 
         .accordion-content {
-            padding: 15px;
+            padding: 20px;
             font-size: 16px;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
         }
 
         .arrow {

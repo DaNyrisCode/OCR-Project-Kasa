@@ -1,5 +1,5 @@
 @use "../variables" as *;
-@import "../variables.scss";
+// @import "../variables.scss";
 
 .banner {
   position: relative;
@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
   height: 223px;
+
+  @media (max-width: 768px) {
+    height: 111px;
+    justify-content: left;
+  }
 
   img {
     width: 100%;
@@ -23,13 +28,10 @@
     font-size: 48px;
     font-weight: bold;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  }
 
-  @media (max-width: 768px) {
-    height: 111px;
-    justify-content: left;
-    &-text {
+    @media (max-width: 768px) {
       font-size: 24px;
+      padding-left: 20px;
     }
   }
 }

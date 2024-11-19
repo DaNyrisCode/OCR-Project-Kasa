@@ -8,7 +8,7 @@ const Banner = () => {
     const isAboutPage = location.pathname === '/about';
 
     return (
-        <div className="banner optimal-width">
+        <div className="banner">
             {isHomePage && (
                 <>
                     <img src={img} alt="Image page d'accueil" />
