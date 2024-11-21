@@ -1,0 +1,69 @@
+@use "../variables" as *;
+// @import "../variables.scss";
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  
+    .slideshow-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $rental-card-radius;
+      width: 100%;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 410px;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+          height: 255px;
+        }
+      }
+    }
+  
+    .indicator {
+      position: absolute;
+      bottom: 25px;
+      font-size: 18px;
+      left: 48%;
+      color: $wht-color;
+
+      @media (max-width: 768px) {
+        opacity: 0;
+      }
+    }
+  
+    button {
+      position: absolute;
+      top: 40%;
+      cursor: pointer;
+      background: none;
+      border: none;
+      z-index: 10;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      @media (max-width: 768px) {
+        top: 45%;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+  
+    .prev {
+      left: 15px;
+    }
+  
+    .next {
+      right: 15px;
+    }
+  }
+  

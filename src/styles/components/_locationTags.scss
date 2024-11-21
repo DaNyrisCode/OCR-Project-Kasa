@@ -1,0 +1,35 @@
+@use "../variables" as *;
+// @import "../variables.scss";
+
+.location-tags {
+    margin-top: 20px;
+    border-radius: 10px;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: $main-color;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .tags {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+        
+        .tag {
+            background-color: $main-color;
+            color: $wht-color;
+            padding: 5px 10px;
+            border-radius: $rental-card-radius;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 5px 30px;
+        }
+    }
+}
