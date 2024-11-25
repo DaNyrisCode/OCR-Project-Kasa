@@ -6,12 +6,16 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    border-radius: 5px;
+
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
 
     .host-profil {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 20px;
     }
   
     .host-photo {
@@ -19,6 +23,11 @@
       height: 64px;
       border-radius: 50%;
       overflow: hidden;
+
+      @media (max-width: 768px) {
+        width: 32px;
+        height: 32px;
+      }
       
       img {
         width: 100%;
@@ -28,7 +37,14 @@
     }
   
     p {
-      font-size: 16px;
+      font-size: 18px;
+      color: $main-color;
+      text-align: right;
+      font-weight: $font-weigth-medium;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   
     .host-rating {
@@ -36,8 +52,11 @@
       gap: 5px;
   
       .star-icon {
-        width: 20px;
-        height: 20px;
+        width: 36px;
+
+        @media (max-width: 768px) {
+          width: 18px;
+        }
       }
     }
   }

@@ -4,7 +4,7 @@ const LocationTags = ({ title, location, tags }) => {
     return (
         <div className="location-tags">
             <h1>{title}</h1>
-            <p>{location}</p>
+            <h2>{location}</h2>
 
             <div className="tags">
                 {tags && tags.map((tag, index) => (

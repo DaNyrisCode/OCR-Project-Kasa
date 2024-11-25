@@ -13,14 +13,21 @@ const AccordionItem = ({ title, content }) => {
         <div className="accordion-item">
             <button className="accordion-header" onClick={toggleContent}>
                 {title}
-                {/* Image de l'Arrow */}
                 <img
                     src={arrow}
                     alt="flèche"
                     className={`arrow ${isOpen ? 'open' : ''}`}
                 />
             </button>
-            {isOpen && <div className="accordion-content">{content}</div>} {/* Contenu de l'élément */}
+            {isOpen && (
+                <div className="accordion-content">
+                    {Array.isArray(content)
+                        ? content.map((item, index) => (
+                              <p key={index}>{item}</p>
+                          ))
+                        : <p>{content}</p>}
+                </div>
+            )}
         </div>
     );
 };

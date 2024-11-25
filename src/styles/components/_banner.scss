@@ -20,13 +20,14 @@
     object-fit: cover;
     border-radius: $rental-card-radius;
     filter: brightness(50%);
+    box-shadow: $banner-shadow;
   }
 
   &-text {
     position: absolute;
     color: $wht-color;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: $font-weigth-bold;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 768px) {

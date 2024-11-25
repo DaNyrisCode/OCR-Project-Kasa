@@ -7,15 +7,21 @@ $main-color: #FF6060;
 
 $rental-bg-color: #F6F6F6;
 
-$rental-card-radius: 20px;
 $rental-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$banner-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.2);
 
-// MIXINS
-@mixin font-width-medium {
-    font-weight: 500;
+$rental-card-radius: 20px;
+$valors-tags-radius: 5px;
+
+$font-weigth-medium: 500;
+$font-weigth-bold: 700;
+
+@keyframes expandContent {
+    0% {
+        transform: translateY(-100px);
+     }
+   
+     100% {
+        transform: translateY(0);
+     }
 }
-
-@mixin font-width-bold {
-    font-weight: 700;
-}
-

@@ -2,7 +2,7 @@ import AccordionItem from "./AccordionItem";
 
 const Valors = () => {
     return (
-        <div className="accordion">
+        <div className="valors-accordion">
     <AccordionItem 
         title="Fiabilité" 
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
