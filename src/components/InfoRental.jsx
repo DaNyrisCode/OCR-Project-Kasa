@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import AccordionItem from './AccordionItem';
 
+//* COMPOSANT pour LOGEMENT:  Description, Equipements
 const InfoRental = ({ description, equipments }) => {
   return (
     <section className="info-rental">

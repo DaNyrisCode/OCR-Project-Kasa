@@ -3,7 +3,7 @@ import ArrowLeft from '../assets/SlideArrowleft.png';
 import ArrowRight from '../assets/SlideArrowRight.png';
 import { useState } from 'react';
 
-
+//* COMPOSANT pour LOGEMENT : Caroussel
 const Diapo = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const totalSlides = slides.length;

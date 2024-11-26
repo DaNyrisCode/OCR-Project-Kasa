@@ -2,6 +2,7 @@
 import raitingfull from '../assets/star-active.png';
 import raitingempty from '../assets/star-inactive.png';
 
+//* COMPOSANT pour LOGEMENT:  Hote, Note
 const HostRating = ({ name, picture, rating }) => {
   // Sépare le nom et le prénom
   const [firstName, lastName] = name ? name.split(" ") : ["", ""];

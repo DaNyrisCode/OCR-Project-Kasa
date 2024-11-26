@@ -1,5 +1,6 @@
 import AccordionItem from "./AccordionItem";
 
+//* COMPOSANT pour ABOUT : content pour le Collapse/Accordion
 const Valors = () => {
     return (
         <div className="valors-accordion">

@@ -1,6 +1,7 @@
 import data from '../data/rental.json';
 import { Link } from 'react-router-dom';
 
+//* COMPOSANT pour HOME : Cards des logements
 const RentalGrid = () => {
   return (
     <div className="rental-grid">

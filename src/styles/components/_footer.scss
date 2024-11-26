@@ -10,6 +10,7 @@
     background-color: $blck-color;
     color: $wht-color;
     font-size: 24px;
+    font-weight: $font-weigth-medium;
 
     @media (max-width: 768px) {
         font-size: 12px;

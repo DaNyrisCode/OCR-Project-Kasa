@@ -2,6 +2,7 @@
 import LocationTags from './LocationTags';
 import HostRating from './HostRating';
 
+//* COMPOSANT pour LOGEMENT : Regroupe LocationTags et HostRating
 const MainComponentRental = ({ title, location, tags, name, picture, rating }) => {
     return (
       <section className="rental-section">

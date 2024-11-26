@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+//* COMPOSANT pour LOGEMENT:  Titre, Localisation, Tags
 const LocationTags = ({ title, location, tags }) => {
     return (
         <div className="location-tags">
